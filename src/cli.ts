@@ -79,6 +79,10 @@ function setupGitIgnore() {
     .split('\n')
     .map(line => line.trim())
 
+  if (lines.length === 1 && !lines[0]) {
+    lines = []
+  }
+
   let patterns = [
     'node_modules/',
     '*-lock.json',
