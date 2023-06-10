@@ -1,0 +1,46 @@
+{
+  "name": "npm-setup-git",
+  "version": "0.0.0",
+  "description": "npm cli tool to setup git repository fields in package.json and .gitignore",
+  "keywords": [
+    "cli",
+    "setup",
+    "git repository",
+    "package.json",
+    "gitignore"
+  ],
+  "author": {
+    "name": "Beeno Tung",
+    "email": "aabbcc1241@yahoo.com.hk",
+    "url": "https://beeno-tung.surge.sh"
+  },
+  "license": "BSD-2-Clause",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/beenotung/npm-setup-git.git"
+  },
+  "homepage": "https://github.com/beenotung/npm-setup-git#readme",
+  "bugs": {
+    "url": "https://github.com/beenotung/npm-setup-git/issues"
+  },
+  "bin": {
+    "npm-setup-git": "dist/cli.js"
+  },
+  "directories": {
+    "example": "example"
+  },
+  "files": [
+    "dist/cli.js"
+  ],
+  "scripts": {
+    "test": "tsc --noEmit",
+    "build": "tsc -p .",
+    "prepublishOnly": "npm run build"
+  },
+  "devDependencies": {
+    "@types/node": "^20.2.6",
+    "ts-node": "^10.9.1",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.1.3"
+  }
+}
