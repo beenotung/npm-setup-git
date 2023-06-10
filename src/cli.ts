@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 import { accessSync, readFileSync, writeFileSync } from 'fs'
 import { join } from 'path'
 
