@@ -1,6 +1,6 @@
 {
   "name": "npm-setup-git",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "npm cli tool to setup git repository fields in package.json and .gitignore",
   "keywords": [
     "cli",
